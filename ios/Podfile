@@ -15,7 +15,13 @@ if linkage != nil
 end
 
 target 'rn_voip_demo' do
+  use_frameworks! :linkage => :static
+  $RNFirebaseAsStaticFramework = true
+  use_modular_headers! # Add this line to set use_modular_headers globally
   config = use_native_modules!
+
+  pod 'Firebase/Core'
+  pod 'GoogleUtilities', :modular_headers => true # Add this line to set modular_headers for GoogleUtilities
 
   use_react_native!(
     :path => config[:reactNativePath],
