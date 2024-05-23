@@ -10,8 +10,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^20.0.0",
+    "@react-native-firebase/messaging": "^20.0.0",
     "react": "18.2.0",
-    "react-native": "0.74.1"
+    "react-native": "0.74.1",
+    "react-native-callkeep": "^4.3.13",
+    "react-native-voip-push-notification": "^3.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
